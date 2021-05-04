@@ -7,18 +7,6 @@ class Profile
         @address = address
         @work = work
     end
-
-    def full_name=(full_name)
-        @full_name = full_name
-    end
-
-    def age=(age)
-        @age = age
-    end
-
-    def work=(work)
-        @work = work
-    end
 end
   
   my_profile = Profile.new('Juan', 18, 'Bulacan', 'Instructor')
