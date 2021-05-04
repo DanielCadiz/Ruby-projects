@@ -5,9 +5,9 @@ class Anime
         @genre = genre
     end
     def show
-        puts "Title: #@title \nMain Character: #@mc \nGnere: #@genre"
+        puts "Title: #@title \nProtagonist: #@mc \nGnere: #@genre"
     end
 end
 
-OnePiece = Anime.new("One Piece", "Monkey D. Luffy", "Shonen/Adventure")
-OnePiece.show
+op = Anime.new("One Piece", "Monkey D. Luffy", "Shonen/Adventure")
+op.show
