@@ -21,4 +21,3 @@ end
   puts my_profile.age
   puts my_profile.work
   puts my_profile.address
-  
