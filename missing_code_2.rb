@@ -62,7 +62,7 @@ end
   
   
 ## execute
-  
+
 my_admin = Admin.new('avionuser', 'password', '127.0.0.1')
 my_admin.admin_login
 my_admin.edit_users_profile
