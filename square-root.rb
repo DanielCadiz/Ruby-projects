@@ -11,20 +11,20 @@ end
 puts "#{isperfect}"
 =end
 
-var = 0
-puts "Enter number:"
+pos = 0
+neg = 0
 num = gets.chomp.to_i
 
-while var <= num
-    if var * var == num
-        puts "#{num} => true."
+while pos <= num
+    if pos * pos == num
+        puts true
         break
-    elsif var == num
-        puts "#{num} => false."
+    elsif pos == num
+        puts false
     end
-    var += 1
+    pos += 1
 end
 
-if num < var
-    puts "#{num} => false."
+if num < neg
+    puts false
 end
