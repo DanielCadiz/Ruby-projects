@@ -15,8 +15,8 @@ if input != [] && input != nil
     neg_sum.each do |neg|
         if neg_sum[0] != neg
             neg_sum[0] += neg
-        elsif neg_sum == []
-            neg_sum[0] = 0
+        #elsif neg_sum == [] || neg_sum == nil
+            #neg_sum = [0]
         end
     end
     answer << pos_count
