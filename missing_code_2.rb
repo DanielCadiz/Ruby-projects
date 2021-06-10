@@ -17,45 +17,33 @@ class User
     @password = password
     @ip_address = ip_address
   end
+
+  def change_password=(password)
+    @password = password
+    puts "Password changed!"
+  end
   
   protected
   def login
     puts "User logged in. IP address: #{@ip_address}"
   end
-
-  def change_password=(new_password)
-    @password = new_password
-    puts "Password changed!"
-  end
 end
   
   
 class Admin < User
-  def admin_login
-    login
-  end
-
-  def edit_users_profile
-    super
-  end
-
-  def change_password=(new_password)
-    super
-  end
+  include AdminPermisson
+      
+    def admin_login
+        login
+    end
 end
   
   
 class Buyer < User
-  def buyer_login
-    login
-  end
+  include BuyerPermission
 
-  def buy
-    super
-  end
-  
-  def change_password=(new_password)
-    super
+  def buyer_login
+      login
   end
 end
 
